@@ -70,6 +70,16 @@ html, body {
 body {
   border-top: 5px solid tomato;
 }
+.dsg {
+  width: 50%;
+  margin: 2em auto 0;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 100%;
+}
 p, a {
   font-size: 2em;
   text-align: center;
@@ -78,7 +88,7 @@ p, a {
 p {
   width: 90%;
   max-width: 700px;
-  margin: 2em auto 0;
+  margin: 1em auto 0;
 }
 a {
   width: 90%;
@@ -100,8 +110,6 @@ a:active {
   box-shadow: inset 2px 2px 5px rgba(0,0,0,.2);
   transition: all .15s linear;
 }
-
-
 @media only screen and (max-width: 760px) {
   body {
     font-size: .925em;
@@ -110,6 +118,9 @@ a:active {
 @media only screen and (max-width: 600px) {
   body {
     font-size: .825em;
+  }
+  .dsg {
+    width: 25%;
   }
   p {
     max-width: 315px;
