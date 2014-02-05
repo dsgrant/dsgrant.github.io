@@ -62,7 +62,7 @@ samp {
 html, body {
   width: 100%;
   height: 100%;
-  background: azure;
+  background-color: azure;
   font-family: source-code-pro, helvetica neue, helvetica, arial, sans-serif;
   font-weight: 300;
   color: #444;
@@ -73,6 +73,7 @@ body {
 p, a {
   font-size: 2em;
   text-align: center;
+  transition: all .25s linear;
 }
 p {
   width: 90%;
@@ -93,9 +94,13 @@ a:hover,
 a:focus {
   color: azure;
   background-color: tomato;
-  border-color: azure;
-  transition: all .3s linear;
+  transition: all .15s linear;
 }
+a:active {
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,.2);
+  transition: all .15s linear;
+}
+
 
 @media only screen and (max-width: 760px) {
   body {
