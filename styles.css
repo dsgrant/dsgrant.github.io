@@ -110,6 +110,22 @@ a:active {
   box-shadow: inset 2px 2px 5px rgba(0,0,0,.2);
   transition: all .15s linear;
 }
+
+.zen {
+  padding: 6em 0;
+  font-size: .825em;
+  text-align: center;
+}
+.desc {
+  font-size: 1em;
+}
+.desc a {
+  display: inline-block;
+  font-size: 1em;
+  width: auto;
+  margin: 0;
+}
+
 @media only screen and (max-width: 760px) {
   body {
     font-size: .925em;
