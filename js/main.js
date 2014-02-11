@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function(){
       if (request.status >= 200 && request.status < 400){
         // Success!
         resp = request.responseText
-        console.log(resp);
         el.innerHTML = resp;
       } else {
         // We reached our target server, but it returned an error
