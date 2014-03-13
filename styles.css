@@ -70,29 +70,6 @@ html, body {
 body {
   border-top: 5px solid tomato;
 }
-.icon-dsg {
-  width: 50%;
-  margin: 2em auto 0;
-}
-.icon-dsg > img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  border-radius: 100%;
-}
-.callout {
-  font-size: 2em;
-  text-align: center;
-  transition: all .25s linear;
-  width: 90%;
-  max-width: 700px;
-  margin: 1em auto 0;
-}
-.callout a {
-  max-width: 300px;
-  display: block;
-  margin: 1em auto 0;
-}
 a {
   color: tomato;
   text-decoration: none;
@@ -109,11 +86,62 @@ a:active {
   box-shadow: inset 2px 2px 5px rgba(0,0,0,.2);
   transition: all .15s linear;
 }
+.icon-dsg {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 2em auto 0;
+  border-radius: 100%;
+  background: url('img/dsg.png') no-repeat center center;
+  border: none;
+  transition: all .15s linear;
+}
+.icon-dsg:hover,
+.icon-dsg:focus {
+  border-radius: 25%;
+  background-color: none;
+  transition: all .15s linear;
+}
+.callout {
+  font-size: 2em;
+  text-align: center;
+  transition: all .25s linear;
+  width: 90%;
+  max-width: 700px;
+  margin: 1em auto 0;
+}
+.callout a {
+  max-width: 300px;
+  display: block;
+  margin: 1em auto 0;
+}
 
 .zen {
   padding: 6em 0;
   font-size: .825em;
   text-align: center;
+}
+.content {
+  max-width: 768px;
+  margin: 60px auto;
+  *zoom: 1;
+}
+.content:before,
+.content:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.content:after {
+    clear: both;
+}
+
+.col-3 {
+  float: left;
+  width: 33.333333333333333%;
+}
+.col-3 img {
+  display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -124,9 +152,6 @@ a:active {
 @media only screen and (max-width: 600px) {
   body {
     font-size: .825em;
-  }
-  .icon-dsg {
-    width: 25%;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -143,5 +168,11 @@ a:active {
   }
   .zen .callout {
     text-align: center;
+  }
+  .col-3 {
+    float: none;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
   }
 }
